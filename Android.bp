@@ -13660,6 +13660,23 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "toucheventcheck",
+	owner: "xiaomi",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/bin/toucheventcheck"],
+			shared_libs: ["libutils", "libhardware", "liblog", "libcutils", "libbinder", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "vppservice",
 	owner: "xiaomi",
 	target: {
