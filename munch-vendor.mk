@@ -414,7 +414,7 @@ PRODUCT_PACKAGES += \
     libqcvirt \
     libswgamedap \
     libswvqe \
-    vendor.dolby.hardware.dms@2.0 \
+    vendor.dolby.hardware.dms@2.0_vendor \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
